@@ -26,7 +26,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background: linear-gradient(to bottom, #9100F8, #F7E93F);
+    background: linear-gradient(to top right,#F7E93F 0%, #FB09B4 51%,#9100F8 100%);
     font-weight: 500;
     padding: 12px 16px;
     border: none;
@@ -34,11 +34,29 @@
     transition: transform 0.3s ease;
     cursor: pointer;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     transform: scale(1.05);
 }
 
-.btn-secondary {}
+.btn-secondary {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #00FF88;
+    font-weight: 500;
+    padding: 12px 16px;
+    border: 2px solid #00FF88;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    background: transparent;
+}
+.btn-secondary:hover{
+    transform: scale(1.05);
+} 
 
 /* Header section */
 #header {
@@ -55,8 +73,9 @@
 .navBar .logo h1 {
     font-size: 3rem;
 }
+
 .navBar .logo h1 span {
-    background: linear-gradient(to bottom, #9100F8,#F7E93F);
+     background: linear-gradient(to top right,#F7E93F 0%, #FB09B4 51%,#9100F8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -70,10 +89,69 @@
     font-weight: 500;
     transition: all 0.3s ease;
 }
+
 .navBar ul li a:hover {
     transform: scale(1.2);
     font-weight: 700;
-    background: linear-gradient(to bottom, #9100F8,#F7E93F);
+     background: linear-gradient(to top right,#F7E93F 0%, #FB09B4 51%,#9100F8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+/* Banner section */
+#banner {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../assets/hero-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.circle-bg {
+    width: 300px;
+    height: 300px;
+    background-image: url('../assets/hero-circle.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+.circle-bg p{
+    position: absolute;
+    background-color: #00FF88;
+    color: #1A0B2E;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 20px;
+    top: 10%;
+    right: 5%;
+    box-shadow: 4px 4px 15px rgba(18, 239, 37, 0.3);
+}
+
+.banner-content h1{
+    font-weight: 800;
+    font-size: 3.6rem;
+    margin-bottom: 15px;
+}
+
+.btn-section{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
 }
