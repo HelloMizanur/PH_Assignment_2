@@ -115,6 +115,10 @@
     -webkit-text-fill-color: transparent;
 }
 
+.humbarg {
+    display: none;
+}
+
 /* Banner section */
 #banner {
     width: 100%;
@@ -349,6 +353,9 @@ footer {
     text-align: center;
     padding: 120px 0px;
     background-image: url('../assets/footer-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 
@@ -367,14 +374,14 @@ footer h1 span {
     margin: 0 auto;
     max-width: 700px;
     display: grid;
-    gap: 25px;
+    gap: 10px;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
 }
 
 .social-item {
     display: flex;
-    gap: 15px;
+    gap: 5px;
     cursor: pointer;
     justify-content: center;
     align-items: center;
@@ -383,4 +390,80 @@ footer h1 span {
 footer p {
     color: #9b9595;
     margin-top: 30px;
+}
+
+
+/*  Responsive */
+
+@media screen and (max-width: 576px) {
+    .navBar .logo h1 {
+        font-size: 2rem;
+    }
+
+    .navBar {
+        padding: 20px 20px;
+    }
+
+    .navBar ul {
+        display: none;
+    }
+
+    .sub-btn {
+        display: none;
+    }
+
+    .humbarg {
+        display: block;
+    }
+
+    .section-heading h1 {
+        padding-top: 40px;
+        font-size: 2rem;
+    }
+
+    .section-heading p {
+        padding: 20px 80px;
+    }
+
+
+    .about-items {
+        padding: 51px 86px;
+        flex-wrap: wrap;
+    }
+
+    .choose-items {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .video-sections {
+        flex-direction: column;
+        padding: 40px;
+        padding-bottom: 25px;
+    }
+
+    .video-card .video iframe {
+        max-width: 100%;
+    }
+
+    .host-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 40px;
+    }
+
+    .social-container {
+        justify-content: center;
+    }
+
+    .footer-social {
+
+        padding: 20px 100px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sItem-three{
+        margin-left: 30px;
+    }
 }
