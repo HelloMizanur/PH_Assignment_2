@@ -463,7 +463,8 @@ footer p {
         padding: 20px 100px;
         grid-template-columns: repeat(2, 1fr);
     }
-    .sItem-three{
+
+    .sItem-three {
         margin-left: 30px;
     }
 }
