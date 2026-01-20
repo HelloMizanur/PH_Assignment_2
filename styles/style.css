@@ -84,7 +84,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .navBar .logo h1 {
@@ -397,6 +396,12 @@ footer p {
 /*  Responsive */
 
 @media screen and (max-width: 576px) {
+
+    /* Header */
+    #banner {
+        background-size: contain;
+    }
+
     .navBar .logo h1 {
         font-size: 2rem;
     }
@@ -426,10 +431,25 @@ footer p {
         padding: 20px 80px;
     }
 
+    .banner-content {
+        padding-top: 140px;
+    }
+
+    .circle-bg {
+        width: 244px;
+        height: 225px;
+    }
+
+    .circle-bg img {
+        width: 100px;
+    }
+
+    /* About section */
+
 
     .about-items {
         padding: 51px 86px;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .choose-items {
