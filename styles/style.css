@@ -353,11 +353,12 @@ footer {
     text-align: center;
     padding: 120px 0px;
     background-image: url('../assets/footer-bg.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-
+    background-color: #220b40;
 }
+
 
 footer h1 {
     font-size: 4rem;
@@ -466,5 +467,10 @@ footer p {
 
     .sItem-three {
         margin-left: 30px;
+    }
+
+    .item-one {
+        padding: 40px 40px;
+        grid-row: span 2;
     }
 }
